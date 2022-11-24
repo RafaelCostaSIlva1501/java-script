@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio proposto</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body{
+            background-image: linear-gradient(68.1, #5817c2,#2d0a66,);
+        }
+       
+    </style>
+</head>
+<body>
+    <main>
+        <input type="text" id="input">
+        <input type="button" value="Confirmar" id="botao">
+        <div id="resposta"></div>
+    </main>
+
+    <script>
+        var input1 = window.document.querySelector('#input')
+        var botao1 = window.document.querySelector('#botao')
+        botao1.addEventListener('click', confirmar)
+        var resp = window.document.querySelector('#resposta')
+
+        function confirmar(){
+            if (input1 = '0906'){
+                resp.innerHTML += 'Parabéns lalinhna, meu cu e meu coração são todinhos seu!'
+            } else{
+                resp.style.color += 'red'
+                resp.innerHTML = 'Tenta de novo aí gatinha!' 
+            }
+        }
+      
+    </script>
+</body>
+</html>
